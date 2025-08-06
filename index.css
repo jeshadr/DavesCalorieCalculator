@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
+    height:60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+body > div {
+    margin-top: 0px; /* Prevents overlap with the top bar */
+}
+/* Logo in the top-left corner */
+.top-bar-logo {
+    height: 40px; /* Adjust height to fit within the bar */
+    margin-right: 10px; /* Add space between the image and the text */
+    object-fit: contain; /* Ensures the image doesn't distort */
+}
+
+.card-container {
+    display: flex;
+    gap: 1em; /* Space between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 1em; /* Adds padding inside the container */
+    margin-left: 1em;
+    scroll-snap-type: x mandatory; /* Optional: Snapping effect */
+    -ms-overflow-style: none; /* Hide scroll bar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scroll bar for Firefox */
+}
+/* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 20em; /* Prevents shrinking and fixes card width */
+    background-color: #fff;
+    box-shadow: 0 5px 5px #e1e1e1;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px; /* Adds rounded edges */
+    overflow: hidden; /* Ensures content respects rounded corners */
+    scroll-snap-align: start; /* Optional: Snap alignment */
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card img {
+    width: 100%; /* Ensure images fill the card width */
+    display: block;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    margin: 0.3em 0;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.3em;
+    min-height: 4em; /* Reserve space for two lines of text */
+
+}
+
+.product-card div {
+    font-size: 1.2em;
+    margin: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.title-bold {
+    margin-top: 1em;
+    margin-left: 0.4em;
+    font-size: 1.5em;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-weight: bold;
+}
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+  @media screen and (max-width: 576px) {
+    .product-card {
+      font-size: 0.9em;
+    }
+  }

@@ -1,0 +1,66 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Title Styling */
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Scrollable Container */
+.card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* Snap effect when scrolling */
+}
+
+/* Individual Card */
+.card {
+    flex: 0 0 250px; /* Fixed width for each card */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: start; /* Snap alignment for each card */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image Styling */
+.card-image {
+    width: 100%;
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures image retains aspect ratio */
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
