@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Coding\\DavesCalorieCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|c:\\coding\\davescaloriecalculator\\davescaloriecalculator\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|solutionrelative:davescaloriecalculator\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|c:\\coding\\davescaloriecalculator\\davescaloriecalculator\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|solutionrelative:davescaloriecalculator\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|c:\\coding\\davescaloriecalculator\\davescaloriecalculator\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|solutionrelative:davescaloriecalculator\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|c:\\coding\\davescaloriecalculator\\davescaloriecalculator\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{9414B53E-B015-4970-AFC5-A76B1E4601A0}|DavesCalorieCalculator\\DavesCalorieCalculator.csproj|solutionrelative:davescaloriecalculator\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Web.config",
+              "RelativeDocumentMoniker": "DavesCalorieCalculator\\Web.config",
+              "ToolTip": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Web.config",
+              "RelativeToolTip": "DavesCalorieCalculator\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-08T02:38:07.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Global.asax.cs",
+              "RelativeDocumentMoniker": "DavesCalorieCalculator\\Global.asax.cs",
+              "ToolTip": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Global.asax.cs",
+              "RelativeToolTip": "DavesCalorieCalculator\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T02:38:03.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Site.Master",
+              "RelativeDocumentMoniker": "DavesCalorieCalculator\\Site.Master",
+              "ToolTip": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Site.Master",
+              "RelativeToolTip": "DavesCalorieCalculator\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-08T02:37:20.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Default.aspx",
+              "RelativeDocumentMoniker": "DavesCalorieCalculator\\Default.aspx",
+              "ToolTip": "C:\\Coding\\DavesCalorieCalculator\\DavesCalorieCalculator\\Default.aspx",
+              "RelativeToolTip": "DavesCalorieCalculator\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-07T21:34:41.819Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
