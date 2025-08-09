@@ -7,6 +7,8 @@
         let selectedMeal = "";
         let selectedCalories = "";
         let selectedSpiceCount = 1;
+        let selectedShake = "";
+        let selectedShakeSizes = {};
 
         function updateCartUI() {
             const cartList = document.getElementById("cartList");
@@ -72,9 +74,6 @@
             totalPrice.textContent = `Total Price: $${price.toFixed(2)}`;
         }
 
-
-
-
         function addSideToCart(mealName, calories, price) {
             cart.push({
                 name: mealName,
@@ -86,7 +85,6 @@
             updateCartUI();
         }
 
-
         function showSpiceModal(mealName, calRange, spiceCount = 1, price = 0) {
             selectedMeal = mealName;
             selectedCalories = calRange;
@@ -97,7 +95,28 @@
             document.getElementById("spiceModal").style.display = "flex";
         }
 
+        function showShakeModal(shakeName, sizes) {
+            selectedShake = shakeName;
+            selectedShakeSizes = sizes;
+            document.getElementById("shakeNameDisplay").innerText = shakeName;
+            document.getElementById("shakeModal").style.display = "flex";
+        }
 
+        function closeShakeModal() {
+            document.getElementById("shakeModal").style.display = "none";
+        }
+
+        function selectShakeSize(size) {
+            const shakeData = selectedShakeSizes[size];
+            cart.push({
+                name: selectedShake,
+                spice: size,
+                calories: shakeData.cal,
+                price: shakeData.price
+            });
+            updateCartUI();
+            closeShakeModal();
+        }
 
         function closeModal() {
             document.getElementById("spiceModal").style.display = "none";
@@ -123,11 +142,7 @@
             updateCartUI();
             closeModal();
         }
-
     </script>
-
-
-
 
     <style>
         body {
@@ -165,7 +180,6 @@
         .card-container::-webkit-scrollbar {
             display: none;
         }
-
 
         .product-card {
             scroll-snap-align: start;
@@ -271,7 +285,7 @@
 
     <!-- Top bar -->
     <div class="top-bar">
-        <img src="./Assets/daves_logo_trans.png" alt="Logo" class="top-bar-logo" />
+        <img src="./Assets/jeshads_cal_logoT.png" alt="Logo" class="top-bar-logo" />
     </div>
 
     <div style="background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 8px; margin-top: 10px; max-width: 600px;">
@@ -345,31 +359,6 @@
             </div>
         </div>
 
-        <!-- Single Tender -->
-        <div class="product-card">
-            <img src="./Assets/singleTender.jpg" alt="" />
-            <div class="product-info">
-                <h3>Single Tender</h3>
-                <div>
-                    <span>$4.79</span>
-                    <span>490-550 cal</span>
-                    <button type="button" onclick="showSpiceModal('Single Tender', '490-550', 1, 4.79)">+</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single Slider -->
-        <div class="product-card">
-            <img src="./Assets/singleSlider.jpg" alt="" />
-            <div class="product-info">
-                <h3>Single Slider</h3>
-                <div>
-                    <span>$6.69</span>
-                    <span>620-680 cal</span>
-                    <button type="button" onclick="showSpiceModal('Single Slider', '620-680', 1, 6.69)">+</button>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -466,12 +455,99 @@
                 <h3>Large Dave's Sauce</h3>
                 <div>
                     <span>$2.99</span>
-                    <span>720 cal</span>
+                    <span>1530 cal</span>
                     <button type="button" onclick="addSideToCart('Large Dave\'s Sauce', 720, 2.99)">+</button>
                 </div>
             </div>
         </div>
+
+        <!-- Single Tender -->
+        <div class="product-card">
+            <img src="./Assets/singleTender.jpg" alt="" />
+            <div class="product-info">
+                <h3>Single Tender</h3>
+                <div>
+                    <span>$4.79</span>
+                    <span>490-550 cal</span>
+                    <button type="button" onclick="showSpiceModal('Single Tender', '490-550', 1, 4.79)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Slider -->
+        <div class="product-card">
+            <img src="./Assets/singleSlider.jpg" alt="" />
+            <div class="product-info">
+                <h3>Single Slider</h3>
+                <div>
+                    <span>$6.69</span>
+                    <span>620-680 cal</span>
+                    <button type="button" onclick="showSpiceModal('Single Slider', '620-680', 1, 6.69)">+</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Milkshakes -->
+    <div class="title-bold">
+        <span>SHAKES</span>
+    </div>
+
+<div class="card-container">
+
+    <!-- Chocolate Shake -->
+    <div class="product-card">
+        <img src="./Assets/choco_shake.jpg" alt="" />
+        <div class="product-info">
+            <h3>Chocolate Shake</h3>
+            <div>
+                <span>$3.69-$7.49</span>
+                <span>610-1208 cal</span>
+                <button type="button" onclick="showShakeModal('Chocolate Shake', {
+                Small: {cal: 610, price: 4.19},
+                Regular: {cal: 760, price: 5.19},
+                Large: {cal: 1208, price: 7.49}
+            })">+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strawberry Shake -->
+    <div class="product-card">
+        <img src="./Assets/strawberry_shake.jpg" alt="" />
+        <div class="product-info">
+            <h3>Strawberry Shake</h3>
+            <div>
+                <span>$3.69-$7.49</span>
+                <span>610-1208 cal</span>
+                <button type="button" onclick="showShakeModal('Strawberry Shake', {
+                Small: {cal: 610, price: 4.19},
+                Regular: {cal: 760, price: 5.19},
+                Large: {cal: 1208, price: 7.49}
+            })">+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vanilla Shake -->
+    <div class="product-card">
+        <img src="./Assets/vanilla_shake.jpg" alt="" />
+        <div class="product-info">
+            <h3>Vanilla Shake</h3>
+            <div>
+                <span>$3.69-$7.49</span>
+                <span>590-1168 cal</span>
+                <button type="button" onclick="showShakeModal('Vanilla Shake', {
+                Small: {cal: 590, price: 4.19},
+                Regular: {cal: 740, price: 5.19},
+                Large: {cal: 1168, price: 7.49}
+            })">+</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 
     <div class="title-bold">YOUR MEAL</div>
     <div style="background:white; padding:15px; border-radius:8px; max-width:400px; margin-bottom: 200px;">
@@ -493,5 +569,26 @@
 
     </div>
 </div>
+
+<div id="shakeModal" style="display:none;" class="modal-overlay">
+    <div class="modal-content">
+        <h3>Select Shake Size</h3>
+        <p id="shakeNameDisplay"></p>
+
+        <button type="button" class="spice-option" onclick="selectShakeSize('Small')">
+            Small
+        </button>
+        <button type="button" class="spice-option" onclick="selectShakeSize('Regular')">
+            Regular
+        </button>
+        <button type="button" class="spice-option" onclick="selectShakeSize('Large')">
+            Large
+        </button>
+
+        <br /><br />
+        <button type="button" onclick="closeShakeModal()">Cancel</button>
+    </div>
+</div>
+
 
 </asp:Content>
