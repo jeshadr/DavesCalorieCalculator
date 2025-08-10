@@ -8,7 +8,7 @@ A mobile-first web app that helps users estimate the total **calories and price*
 
 ## 🔗 Live Demo
 
-**Check it out here:** [https://davescaloriecalculator.com/](https://davescaloriecalculator.com/)  
+**Check it out here:** [https://davescaloriecalculator.com/](https://davescaloriecalculator.com/)
 
 ---
 
