@@ -14,11 +14,11 @@ A mobile-first web app that helps users estimate the total **calories and price*
 
 ## 💡 Features
 
-- ✅ Browse menu items (combos + sides) with images
-- ✅ Choose spice level (calorie count updates accordingly)
-- ✅ Add/remove items from your meal cart
-- ✅ Real-time total calorie and total price display
-- ✅ Mobile-first responsive layout with optimized touch interactions
+- Browse menu items (combos + sides) with images
+- Choose spice level (calorie count updates accordingly)
+- Add/remove items from your meal cart
+- Real-time total calorie and total price display
+- Mobile-first responsive layout with optimized touch interactions
 
 ---
 
